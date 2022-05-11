@@ -42,27 +42,33 @@ public class Sketch extends PApplet {
       
       // background colour changes accordingly to the first letter of a colour pressed
       if (keyPressed) {
-    
+
+      // change background to red
         if (key == 'r') {
           background(255, 0, 0);
           } 
+      //change background to orange
         else if (key == 'o') {
           background(255, 128, 0);
           } 
+      //change background to yellow
         else if (key == 'y') {
           background(246, 255, 0);
           } 
+      //change background to green
         else if (key == 'g') {
           background(0, 255, 0);
           } 
+      // change background to blue
         else if (key == 'b') {
           background(0, 0, 255);
           }
+      // change background to purple
         else if (key == 'p') {
           background(170, 0, 255);
           } 
         } 
-        
+      // background goes back to white after key is released
         else {
           keyReleased();
           background(255, 255, 255);
@@ -83,13 +89,14 @@ public class Sketch extends PApplet {
          circleX++; 
         }
       }
+      // draw circle
         ellipse(circleX, circleY, 50, 50);
           fill(0, 0, 255);
         
       
       // draws a blue rectangle wherever the mouse cursor is
         rect(mouseX, mouseY, 50, 50);
-        fill(255,255,0);    
+        fill(255, 255, 0);    
     }
   
   }
